@@ -1,10 +1,43 @@
 import "./App.css";
+import Hero from "./sections/Hero";
+import Footer from "./sections/Footer";
+import Offers from "./sections/Offers";
+import Services from "./sections/Services";
+import CustomerReviews from "./sections/CustomerReviews";
+import Subscribe from "./sections/Subscribe";
+import PopularProducts from "./sections/PopularProducts";
+import PremiumProducts from "./sections/PremiumProducts";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline text-center bg-slate-400 py-4">
-      Hello world!
-    </h1>
+    <main className="relative">
+      <Header />
+      <section className="xl:padding-1 wide:padding-r padding-b">
+        <Hero />
+      </section>
+      <section className="padding">
+        <PopularProducts />
+      </section>
+      <section className="padding">
+        <PremiumProducts />
+      </section>
+      <section className="padding">
+        <Services />
+      </section>
+      <section className="padding">
+        <CustomerReviews />
+      </section>
+      <section className="padding">
+        <Offers />
+      </section>
+      <section className="padding-x sm:py-32 p-16 w-full">
+        <Subscribe />
+      </section>
+      <section className="padding-x padding-t bg-black pb-8">
+        <Footer />
+      </section>
+    </main>
   );
 }
 
