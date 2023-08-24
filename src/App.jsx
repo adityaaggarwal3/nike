@@ -7,13 +7,13 @@ import CustomerReviews from "./sections/CustomerReviews";
 import Subscribe from "./sections/Subscribe";
 import PopularProducts from "./sections/PopularProducts";
 import PremiumProducts from "./sections/PremiumProducts";
-import Header from "./components/Header";
+import Nav from "./components/Nav";
 
 function App() {
   return (
     <main className="relative">
-      <Header />
-      <section className="xl:padding-1 wide:padding-r padding-b">
+      <Nav />
+      <section className="xl:padding-l wide:padding-r padding-b">
         <Hero />
       </section>
       <section className="padding">
